@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-10">
+    <h1 class="text-8xl">Queries and Answer</h1>
+
+    <ul class="mt-20">
+        <li class="text-3xl">*Discuss the scope of var, let, and const :- </li>
+        <p class="text-xl mt-10"><span class="font-bold">Scope of var -</span> Scope essentially means where these variables are available for use. var declarations are globally scoped or function/locally scoped.
+
+            The scope is global when a var variable is declared outside a function. This means that any variable that is declared with var outside a function block is available for use in the whole window.
+            
+            var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+            
+            To understand further, look at the example below.</p>
+
+            <p class="text-xl mt-10"><span class="font-bold">Scope of let -</span> let is now preferred for variable declaration. It's no surprise as it comes as an improvement to var declarations. It also solves the problem with var that we just covered. Let's consider why this is so.A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+
+                So a variable declared in a block with let  is only available for use within that block .</p>
+
+                <p class="text-xl mt-10"><span class="font-bold">Scope of const -</span> Like let declarations, const declarations can only be accessed within the block they were declared.Every const declaration, therefore, must be initialized at the time of declaration.
+
+                    This behavior is somehow different when it comes to objects declared with const. While a const object cannot be updated, the properties of this objects can be updated.</p>
+                    <li class="text-3xl mt-40">*Tell us the use cases of null and undefined :- </li>
+                    <p class="text-xl mt-10">Undefined vs Null
+                        Undefined means the variable has been declared, but its value has not been assigned. Null means an empty value or a blank value. The typeof() operator returns undefined for an undefined variable. The typeof() operator returns the type as an object for a variable whose value is assigned as null.</p>
+                        <li class="text-3xl mt-40">*What do you mean by REST API? :- </li>
+                        <p class="text-xl mt-10">At the most basic level, an API is a mechanism that enables an application or service to access a resource within another application or service. The application or service doing the accessing is called the client, and the application or service containing the resource is called the server.
+
+                            Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But REST APIs can be developed using virtually any programming language and support a variety of data formats. The only requirement is that they align to the following six REST design principles - also known as architectural constraints:
+                            
+                            Uniform interface. All API requests for the same resource should look the same, no matter where the request comes from. The REST API should ensure that the same piece of data, such as the name or email address of a user, belongs to only one uniform resource identifier (URI). Resources shouldn’t be too large but should contain every piece of information that the client might need.
+                            
+                            Client-server decoupling. In REST API design, client and server applications must be completely independent of each other. The only information the client application should know is the URI of the requested resource; it can't interact with the server application in any other ways. Similarly, a server application shouldn't modify the client application other than passing it to the requested data via HTTP.
+                            
+                            Statelessness. REST APIs are stateless, meaning that each request needs to include all the information necessary for processing it. In other words, REST APIs do not require any server-side sessions. Server applications aren’t allowed to store any data related to a client request.
+                            
+                            Cacheability. When possible, resources should be cacheable on the client or server side. Server responses also need to contain information about whether caching is allowed for the delivered resource. The goal is to improve performance on the client side, while increasing scalability on the server side.
+                            
+                            Layered system architecture. In REST APIs, the calls and responses go through different layers. As a rule of thumb, don’t assume that the client and server applications connect directly to each other. There may be a number of different intermediaries in the communication loop. REST APIs need to be designed so that neither the client nor the server can tell whether it communicates with the end application or an intermediary.
+                            
+                            Code on demand (optional). REST APIs usually send static resources, but in certain cases, responses can also contain executable code (such as Java applets). In these cases, the code should only run on-demand.</p>
+                        
+    </ul>
+    
+</body>
+</html>
